@@ -1,0 +1,45 @@
+/* Carlito font */
+
+@font-face {
+    font-family: 'Carlito';
+    src: url('../res/fonts/Carlito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Carlito';
+    src: url('../res/fonts/Carlito-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Carlito';
+    src: url('../res/fonts/Carlito-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Carlito';
+    src: url('../res/fonts/Carlito-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Radley font */
+@font-face {
+    font-family: 'Radley';
+    src: url('../res/fonts/Radley-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Radley';
+    src: url('../res/fonts/Radley-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}   
+
