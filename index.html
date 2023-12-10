@@ -26,79 +26,88 @@
 
     <!-- Navbar -->
         <!-- Header Section -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <!-- <a class="navbar-brand" href="#">Your Logo</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#collaborate">Let’s Collaborate!</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
     <!-- Add your navigation bar here -->
 
     <!-- Content Section -->
     <div class="container mt-4">
-        <div class="row" id="hello">
+        <div class="row text-center" id="hello">
             <div class="col">
                 <h1><span id="h1-hello">Hello there,</span> I am Jenny!</h1>
                 <p>I believe in the power of stories. Let’s elevate your brand’s voice and create an authentic, unique social media marketing strategy together.</p>
             </div>
         </div>
-        <div class="row" id="about-me">
-            <div class="col-md-6 order-md-2">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <!-- <a class="navbar-brand" href="#">Your Logo</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav ml-auto justify-content-between">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">My Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lets-collaborate">Let’s Collaborate!</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row page-section" id="about-me">
+            <div class="col-md-6 order-md-2 d-flex justify-content-center align-items-center">
                 <img src="res/img/jenny.jpg" id="img-jenny" alt="A picture of me" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <h2>About Me</h2>
-                <p>Hello there! I'm a bilingual (German/English) Social Media Strategist, Manager, and Copywriter who believes in the power of authentic storytelling. Beyond my work with algorithms and analytics, I find my passion in the pages of a good story. I'm a fiction writer, which is why I intend to bring my love for storytelling into the world of social media and content marketing. Therefore, as a Social Media Manager and Strategist, my focus is on crafting content and strategies that capture the meaningful journey of brands in their different stages. Other than that, I am also more than happy to do some proofreading, translation, and editorial work. Interested in working together? Let's have a chat!
-
+                <p>I am a bilingual (German/English) Social Media Strategist, Manager, and Copywriter who believes in the power of authentic storytelling. Beyond my work with algorithms and analytics, I find my passion in the pages of a good story. I'm a fiction writer, which is why I intend to bring my love for storytelling into the world of social media and content marketing. Therefore, as a Social Media Manager and Strategist, my focus is on crafting content and strategies that capture the meaningful journey of brands in their different stages. Other than that, I am also more than happy to do some proofreading, translation, and editorial work. Interested in working together? Let's have a chat!
                 </p>
             </div>
 
         </div>
-        <div class="row" id="work">
-            <div class="col"><h2>Work</h2></div>
-            <div class="w-100"></div>
-            <div class="col-md-6">
-                <h3>Work Experience</h3>
-                <p>Here are some of the brands I have worked with:</p>
-                <ul>
-                    <li>Brand 1</li>
-                    <li>Brand 2</li>
-                    <li>Brand 3</li>
-                </ul>
+        <div class="row page-section" id="work">
+            <div class="col">
+                <h2>My work</h2>
+                <p class="work-subtitle">Here are some of the projects I worked on</p>
             </div>
-            <div class="col-md-6">
-                <h3>Education</h3>
-                <p>Here are some of the brands I have worked with:</p>
-                <ul>
-                    <li>Brand 1</li>
-                    <li>Brand 2</li>
-                    <li>Brand 3</li>
-                </ul>
+            <div class="w-100"></div>
+            <div class="col-md-4 project-thumb">
+                <img src="res/img/job-z.png" class="img-fluid" alt="job-z project thumbnail">
+                <span class="thumb-caption"><em>job-Z</em> &ndash; Digital Marketing &amp; Content Creation</span>
+            </div>
+            <div class="col-md-4 project-thumb">
+                <img src="res/img/job-z.png" class="img-fluid" alt="job-z project thumbnail">
+                <span class="thumb-caption"><em>TROBOLO</em> &ndash; Copywriting &amp; Social Media Management</span>
+            </div>
+            <div class="col-md-4 project-thumb">
+                <img src="res/img/job-z.png" class="img-fluid" alt="job-z project thumbnail">
+                
+                <span class="thumb-caption"><em>another fiction</em> &ndash; Social Media Content</span>
             </div>
         </div>
-        <div class="row" id="lets-collaborate">
-            <div class="col"><h2>Let’s Collaborate!</h2></div>
-            <div class="w-100"></div>
-            <div class="col">
-                <p>Reach out if you want to create an impactful social media strategy and content together.</p>
+        
+    </div>
+    <div class="page-section fullscreen-background" id="lets-collaborate">
+        <div class="container mt-4"> <!-- Start a new container for the content -->
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <h2>Reach out if you want to create <em>impactful</em> social media content and  strategy together.</h2>
+                </div>
             </div>
-            <div class="col">
-                <p>Reach out if you want to create an impactful social media strategy and content together.</p>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="contact">
+                        <p>Email:</p>
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
+        </div> <!-- Close the new container -->
     </div>
 
     <!-- Footer -->

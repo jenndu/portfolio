@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:compile": "node-sass src/style.scss -o src/ --output-style compressed",
-    "watch:sass": "npm run sass:compile -- --watch"
-  
+    "watch:sass": "npm run sass:compile -- --watch",
+    "start": "http-server "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "node-sass": "^9.0.0"
   }
 }

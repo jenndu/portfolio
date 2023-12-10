@@ -1,8 +1,18 @@
 @import url('fonts.css');
 
+/* colors */
 $background-color: #f4f1e8;
 $almost-black: #191919;
 $primary-color: #9b4819;
+$primary-color-darker: #7a3a15;
+$secondary-color: #153828;
+$tertiary-color: #bd8f53;
+$quaternary-color: #314028;
+
+/* layout and sizes */
+$page-row-top: 50px;
+$hello-max-width: 700px;
+
 body {
     font-family: 'Carlito', serif;
     font-size: 16px;
@@ -18,18 +28,157 @@ h1, h2, h3, h4, h5, h6 {
     color: $primary-color;
 }
 
-h1 {
-    font-size: 5em;
+h2 {
+    font-size: 36px;
 }
 
-/* opener */
+p {
+    font-size: 18px;
+}
+
+/* components */
+.page-section {
+    padding-top: $page-row-top;
+    text-align: center;
+}
+.fullscreen-background {
+    width: 100%;
+}
+
+/* hello */
+#hello h1 {
+    font-size: 72px;
+    max-width: $hello-max-width;
+    margin: 50px auto 0;
+}
+
+#hello p {
+    font-size: 18px;
+    max-width: 550px;
+    margin: 50px auto;
+}
+
 #h1-hello {
     font-style: italic;
     color: $almost-black;
 }
 
+/* navbar */
+.navbar {
+    margin-bottom: 50px;
+    color: $primary-color;
+    font-family: 'Radley', serif;
+}
+
+#navbarNav {
+    justify-content: center;
+}
+
+#navbarNav .navbar-nav {
+    width: 100%;
+    max-width: 550px;
+}
+
+// .navbar .nav-item {
+//     margin: 0 48px;
+// }
+
+.navbar .nav-link {
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.navbar .nav-link:hover {
+    color: $primary-color-darker;
+}
+
 /* about me */
+#about-me {
+    text-align: left;
+}
+
 #img-jenny {
+    max-width: 380px;
+    width: 100%;
     border-radius: 50%;
     border: 5px solid $primary-color;
+    margin-bottom: 15px;
+}
+
+/* my work */
+#work .work-subtitle {
+    margin-bottom: 50px;
+}
+
+.project-thumb {
+    margin-bottom: 50px;
+}
+
+.project-thumb img {
+    margin-bottom: 5px;
+}
+
+.project-thumb .thumb-caption {
+    font-family: 'Radley', serif;
+    font-size: 24px;
+}
+
+/* lets collaborate */
+#lets-collaborate {
+    background: $secondary-color;
+    color: $background-color
+}
+
+#lets-collaborate h2 {
+    color: $background-color;
+}
+
+/* responsive stuff */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    h2 {
+        font-size: 48px;
+    }
+    
+    #hello h1 {
+        margin-top: 100px;
+    }
+
+    .navbar .nav-link {
+        font-size: 20px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #hello h1 {
+        font-size: 92px;
+    }
+
+    #hello p {
+        font-size: 24px;
+    }
+    .page-section {
+        padding-top: $page-row-top*2;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #hello h1 {
+        margin-top: 200px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
 }
