@@ -36,6 +36,21 @@ p {
     font-size: 18px;
 }
 
+a {
+    color: $background-color;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.socials h5 {
+    font-family: 'Carlito', serif;
+    text-transform: uppercase;
+}
+
 /* components */
 .page-section {
     padding-top: $page-row-top;
@@ -133,6 +148,20 @@ p {
 
 #lets-collaborate h2 {
     color: $background-color;
+}
+
+#emailIcon {
+    height: 40px;
+    width: 40px;
+    margin: 5px 10px;
+}
+
+.email p {
+    text-transform: uppercase;
+}
+
+.email .email-address {
+    text-transform: lowercase;
 }
 
 /* responsive stuff */
