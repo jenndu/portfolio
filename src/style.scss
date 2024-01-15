@@ -10,7 +10,7 @@ $tertiary-color: #bd8f53;
 $quaternary-color: #314028;
 
 /* layout and sizes */
-$page-row-top: 50px;
+$page-row-padding: 50px;
 $hello-max-width: 700px;
 
 body {
@@ -46,14 +46,10 @@ a:hover, a:focus, a:active {
     text-decoration: none;
 }
 
-.socials h5 {
-    font-family: 'Carlito', serif;
-    text-transform: uppercase;
-}
-
 /* components */
 .page-section {
-    padding-top: $page-row-top;
+    padding-top: $page-row-padding;
+    padding-bottom: $page-row-padding;
     text-align: center;
 }
 .fullscreen-background {
@@ -115,7 +111,7 @@ a:hover, a:focus, a:active {
 }
 
 #img-jenny {
-    max-width: 380px;
+    max-width: 300px;
     width: 100%;
     border-radius: 50%;
     border: 5px solid $primary-color;
@@ -125,6 +121,7 @@ a:hover, a:focus, a:active {
 /* my work */
 #work .work-subtitle {
     margin-bottom: 50px;
+    font-size: 24px;
 }
 
 .project-thumb {
@@ -137,31 +134,104 @@ a:hover, a:focus, a:active {
 
 .project-thumb .thumb-caption {
     font-family: 'Radley', serif;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+/* client testimonials */
+#client-testimonials {
+    background: $primary-color;
+    color: $background-color;
+}
+
+#client-testimonials h2 {
+    color: $background-color;
+    margin-bottom: 50px;
+}
+
+#client-testimonials .quote {
+    font-size: 20px;
+    font-family: 'Radley', serif;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+#client-testimonials .testimonial {
+    font-size: 16px;
+}
+
+#client-testimonials hr {
+    border-color: $tertiary-color;
+    border-width: 2px;
+}
+
+#client-testimonials .author {
+    font-size: 16px;
 }
 
 /* lets collaborate */
 #lets-collaborate {
     background: $secondary-color;
-    color: $background-color
+    color: $background-color;
 }
 
 #lets-collaborate h2 {
     color: $background-color;
 }
 
+#lets-collaborate .contact {
+    margin-top: 100px;
+}
+
+#lets-collaborate .contact h5 {
+    color: $background-color;
+    font-family: 'Carlito', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+#lets-collaborate p {
+    color: $background-color;
+    font-size: 16px;
+}
+
 #emailIcon {
-    height: 40px;
-    width: 40px;
-    margin: 5px 10px;
+    height: 45px;
+    width: 45px;
+    margin: 5px 10px 5px 2px;
+}
+
+.contact-icon {
+    margin-right: 5px;
+}
+
+.email-tag {
+    font-size: 14px;
 }
 
 .email p {
     text-transform: uppercase;
+    /* slightly more spacing here */
+    letter-spacing: 1px;
 }
 
 .email .email-address {
     text-transform: lowercase;
+}
+
+#lets-collaborate .socials {
+    margin-top: 25px;
+}
+
+.socials .social-icons img {
+    height: 50px;
+    width: 50px;
+}
+
+#upwork-icon {
+    height: 44px;
+    width: 44px;
+    margin: 3px;
 }
 
 /* responsive stuff */
@@ -179,6 +249,10 @@ a:hover, a:focus, a:active {
     .navbar .nav-link {
         font-size: 20px;
     }
+
+    #img-jenny {
+        max-width: 360px;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -191,7 +265,8 @@ a:hover, a:focus, a:active {
         font-size: 24px;
     }
     .page-section {
-        padding-top: $page-row-top*2;
+        padding-top: $page-row-padding*2;
+        padding-bottom: $page-row-padding*2;
     }
 }
 
