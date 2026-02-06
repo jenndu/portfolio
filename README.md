@@ -2,5 +2,4 @@
 professional homepage
 
 ## Deployment
-
-Update and push main, gh-pages will be updated automatically.
+Push to branch gh-pages
