@@ -1,12 +1,12 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "professional homepage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:compile": "node-sass src/style.scss -o src/ --output-style compressed",
-    "watch:sass": "npm run sass:compile -- --watch",
+    "sass:compile": "sass src/style.scss src/style.css --style compressed",
+    "watch:sass": "sass src/style.scss src/style.css --watch --style compressed",
     "start": "http-server "
   },
   "keywords": [],
@@ -14,6 +14,6 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.1",
-    "node-sass": "^9.0.0"
+    "sass": "^1.97.3"
   }
 }
